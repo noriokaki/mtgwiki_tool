@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "MTGwikitool",
+    "description": "MTGwikiの機能強化",
+    "version": "0.1",
+    "action": {
+        "default_icon": {
+            "25": "icon_25.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://mtgwiki.com/*",
+                "https://mtgwiki.com/*",
+                "http://m.mtgwiki.com/*",
+                "https://m.mtgwiki.com/*"
+            ],
+            "css": [
+                "content_styles.css"
+            ],
+            "js": [
+                "content_scripts.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}

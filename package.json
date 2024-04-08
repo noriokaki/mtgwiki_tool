@@ -1,0 +1,19 @@
+{
+  "name": "mtgwiki_tool",
+  "version": "0.0.1",
+  "description": "",
+  "main": "popup.js",
+  "type": "module",
+  "scripts": {
+    "test": " echo test here ",
+    "build": "tsc && vite build && vite build --config=vite.config.content_scripts.js && powershell [Console]::Beep(250,200)"
+  },
+  "keywords": [],
+  "author": "noriokaki",
+  "license": "MIT",
+  "devDependencies": {
+    "chrome-types": "^0.1.277",
+    "typescript": "^5.4.4",
+    "vite": "^5.2.8"
+  }
+}
